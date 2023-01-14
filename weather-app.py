@@ -44,4 +44,4 @@ st.title("Sam's Weather Reporting")
 im1 = st.columns(1)
 
 image = Image.open('img.png')
-st.image(image, caption="This is our stack", use_column_width=True)
+st.image(image, caption="This is my stack", use_column_width=True)

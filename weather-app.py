@@ -45,3 +45,5 @@ im1 = st.columns(1)
 with im1:
     image = 'img.png'
     st.image(image, use_column_width=True, caption="This is our stack")
+
+col1 = st.columns(1)

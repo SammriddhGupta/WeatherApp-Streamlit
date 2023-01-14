@@ -40,7 +40,7 @@ def get_hist_data(lat, lon, start):
 
 st.title("Sam's Weather Reporting")
 
-im1 = st.beta_columns(1)
+im1 = st.columns(1)
 
 with im1:
     image = 'img.png'

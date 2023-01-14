@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
-from datetime import datetime,time
 import pandas as pd
+from datetime import datetime,time
+from PIL import Image
 
 api_key = st.secrets["api_key"]
 
@@ -42,8 +43,5 @@ st.title("Sam's Weather Reporting")
 
 im1 = st.columns(1)
 
-with im1:
-    image = 'img.png'
-    st.image(image, caption="This is our stack", use_column_width=True)
-
-col1 = st.columns(1)
+image = Image.open('img.png')
+st.image(image, caption="This is our stack", use_column_width=True)

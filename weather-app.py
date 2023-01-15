@@ -55,7 +55,7 @@ with col2:
             res, json = getweather(city)
             st.success('Current: '+ str(round(res[1],2)))
             st.info('Feels like: '+ str(round(res[2],2)))
-            st.info('Humidity: '+ str(round(res[3],2)))
+            #st.info('Humidity: '+ str(round(res[3],2)))
             st.subheader('Status: '+ res[7])
             web_str = "![Alt Text]"+"(http://openweathermap.org/img/wn/"+str(res[6])+"@2x.png"
             st.markdown(web_str)

@@ -49,10 +49,10 @@ st.image(image, caption="This is my stack", use_column_width=True)
 col1,col2 = st.columns(2)
 
 with col1:
-    city_name = st.text_input("Please enter your city name")
+    city = st.text_input("Please enter your city name")
 with col2:
-        if city_name:
-            res, json = getweather(city_name)
+        if city:
+            res, json = getweather(city)
             st.success('Current: '+ str(round(res[1],2)))
             st.info('Feels like: '+ str(round(res[2],2)))
             st.info('Humidity: '+ str(round(res[3],2)))
